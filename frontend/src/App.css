@@ -1,0 +1,137 @@
+/* ===== 전체 페이지 스타일 ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212; /* 다크 모드 느낌 */
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* ===== 메인 컨테이너 ===== */
+.container {
+  max-width: 600px;
+  width: 100%;
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* ===== 제목 스타일 ===== */
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* ===== 설명 텍스트 스타일 ===== */
+p {
+  font-size: 14px;
+  color: #aaaaaa;
+  margin-bottom: 20px;
+}
+
+/* ===== 파일 업로드 버튼 ===== */
+.upload-btn {
+  background: linear-gradient(135deg, #ff7eb3, #ff758c);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.upload-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(255, 120, 140, 0.5);
+}
+
+/* ===== 요약 결과 카드 ===== */
+.result-box {
+  background: #282828;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: sans-serif;
+}
+
+pre {
+  max-height: 300px;         /* ✅ 너무 길면 스크롤 */
+  overflow-y: auto;
+  background: #f9f9f9;
+  color: #222222;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin-top: 1rem;
+}
+
+button {
+  margin-right: 0.5rem;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+/* src/styles/App.css */
+.App {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+input[type="file"] {
+  margin-top: 10px;
+}
+button {
+  padding: 0.5rem 1rem;
+  margin-top: 10px;
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:disabled {
+  background-color: #999;
+}
+
+
+
+/* ===== 애니메이션 ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
